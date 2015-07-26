@@ -61,23 +61,22 @@ a {
 	padding: 0 5%;
 }
 header { 
-/*	height: 115px; */
-	background: rgb(245,245,245) url('../images/fon_2.jpg') repeat; 
 	padding-left: 165px; 
 	padding-right: 165px;
-	border-bottom: inset lightgray 2px; 
+	border-bottom: inset lightgray 2px;
+	background: rgb(245,245,245) url('../images/fon_2.jpg') repeat; 	
 }
 
 .logo_header { 
 	float: left; 
+	margin-bottom: 0.5em;	
 	font-size: 2em;
 	line-height: 55px;
-	margin-bottom: 0.5em;	
 }
 .logo { 
+	font-family: Vegur-Medium, 'vegurmedium', sans-serif;	
 	color: rgb(0,0,0);
 	text-shadow: 2px 2px 3px lightgray;
-	font-family: Vegur-Medium, 'vegurmedium', sans-serif;	
 }
 .logo span {
 	font-family: Vegur-Medium, 'vegurmedium', sans-serif;	
@@ -89,9 +88,8 @@ h2 {
 span { 
 	color: rgb(42,181,188); 
 }
-/* Основное меню */
+/*  Main Menu Navigation */
 .main-menu  {
-	/*float: right;*/
 	float: none;
 	clear: both;
 	line-height: 25px;
@@ -103,24 +101,24 @@ span {
 }
 .main-menu  li { 
 	display: block; 
+	padding: 0;
 	vertical-align: middle;
 	text-transform: uppercase; 
 	text-align: center;
-	padding: 0;
 	border-top: 2px solid lightgray;	
 }
 .main-menu a { 
-	color: black; 
+	display: inline-block;
+	width: 100%;
+	padding: 0.5ex 0; 
+	margin: 0;
 	font-family: Ropa Sans;
+	color: black; 
 	text-decoration: none;
 	border-right: 0;
 	border-left: 0;
 	border-top: solid transparent 2px;
 	border-bottom: solid transparent 2px;
-	padding: 0.5ex 0; 
-	width: 100%;
-	display:inline-block;
-	margin: 0;
 }
 
 .main-menu ul li:last-child a { 
@@ -135,31 +133,26 @@ span {
 }
 .main-menu ul:hover a.active:not(:hover){
 	color: black; 
-	border-right: inset lightgray 2px;
-	border-left: solid transparent 2px;
 	background-color: rgba(255,255,255,0);
 	border-radius: 0;
 	border-right: inset transparent 0px;
 	border-left: solid transparent 0px;
-
 }
 
 a.active { 
 	color:  rgb(42,181,188);
 	background-color: rgb(255,255,255); 
-/*	border: solid rgb(255,255,255) 2px; 
-	border-radius: 8px; */
 }
 
 .click {
 	display: block;
+	float: right;
 	width: 50px;
 	height: 35px;
+	margin-top: 15px;
 	background: #999 url('../images/znachki.png') no-repeat 11px -26px;
 	border: solid 1px #666;
 	border-radius: 10px;
-	float: right;
-	margin-top: 15px;
 	outline: none;	
 }
 .hide {
@@ -173,15 +166,14 @@ a.active {
 .cross {
 	background: #999 url('../images/znachki.png') no-repeat -26px -26px;
 }
+/*****************************/
 
-
-/* Основной блок*/
+/* Main Content */
 .content {
-	background: rgb(235,235,235) url('../images/fon_1.jpg') repeat;  
 	overflow: auto;
+	background: rgb(235,235,235) url('../images/fon_1.jpg') repeat;  
 }
 .main { 
-
 	padding-top: 3em;
 	overflow: auto;
 }
@@ -191,10 +183,10 @@ a.active {
 	clear: both;
 }
 .main li { 
+    padding-bottom: 0.7em;					 
 	font-size: 90%;
     line-height: 150%;
     text-align: left;
-    padding-bottom: 0.7em;					 
 }
 .main  h2 { 
 	padding-bottom: 1em;
@@ -219,12 +211,12 @@ p {
 
 ul.points li:before { 
 	content: '•';
-	font-size: 20px;
-	color:  rgb(42,181,188);
 	position: relative;
 	top: 3px;
 	margin-left: -15px;
 	padding-right: 10px;
+	font-size: 20px;
+	color:  rgb(42,181,188);
 }
 .main img  { 
 	width: 100%;
@@ -237,11 +229,11 @@ body a mark  {
 	color:  rgb(42,181,188);
 }
 
-.colonca { 
+.column { 
 	width: 100%; 
 }						 
 
-.colonca img { 
+.column img { 
 	width: 100%; 
 }
 .section_1 {
@@ -252,13 +244,13 @@ body a mark  {
 }
 
 .content  a { 
+	display: block;					
+	padding-bottom: 2em;					 
 	font-size: 90%;
 	line-height: 150%;
 	text-align: left;	
 	text-decoration: none;					
-	padding-bottom: 2em;					 
 	color:  rgb(42,181,188);
-	display: block;					
 }
 .content a:before { 
 	content: "+ ";
@@ -266,16 +258,16 @@ body a mark  {
 	color:  rgb(42,181,188);
 }	
 
-/* Боковая колонка*/
+/* News aside */
 aside {
   float: right;
-  padding-top: 3.8em;
   width: 100%;
+  padding-top: 3.8em;
 }
 
 .slogan { 
-	font-size: 120%;
 	margin-bottom: 2.5em;
+	font-size: 120%;
 }	
 img.slogan { 
 	float: right;
@@ -291,18 +283,18 @@ aside h2 {
 }
 
 time {
+  padding-bottom: 1em;
   font-size: 90%;
   line-height: 150%;
   text-align: left;
-  padding-bottom: 1em;
   color: rgb(42,181,188);
 }
 
 /* Footer*/
 footer {
-	background: rgb(245,245,245) url('../images/fon_2.jpg') repeat;
 	min-height: 167px;
 	border-top: inset lightgray 2px;
+	background: rgb(245,245,245) url('../images/fon_2.jpg') repeat;
 }
 footer:after {
 	content: '';
@@ -315,38 +307,36 @@ footer a {
 }	
 
 .copyright {
+  padding-top: 1em;
   font-size: 90%;
   line-height: 150%;
   font-style: normal;
-  padding-top: 1em;
   white-space: pre;
 }
 
 .logo_footer { 
-/*	float: left; */
+	margin-top: 20px;
 	font-size: 2em;
 	line-height: 120%;
 	text-align: center;
-	margin-top: 20px;
 }
 .info {
-/*	float: right; */
-	margin: 2em auto;
 	width: 260px;
+	margin: 2em auto;
 	text-align: center;
 }
 .contact {
+	margin: 1em 0;
 	padding-top: 1em;
 	border-top: groove lightgray 2px;
-	margin: 1em 0;
 }	
 .contact p {
-	text-align: center;
 	padding-bottom: 0.5em;	
+	text-align: center;
 }
 .contact p span{
-	color: #000;
 	margin-right: 20px;
+	color: #000;
 }		
 .info a {
 	display: inline-block;
@@ -378,50 +368,30 @@ a#btn_youTube {
 	.logo_header { 
 		margin-bottom: 0;	
 	}
-	/* Основное меню */
+	/*  Main Menu Navigation */
 	.main-menu  {
 		float: right;
-		line-height: 50px;
 		clear: none;
+		line-height: 50px;
 	}
-	.main-menu:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+
 	.main-menu  li { 
 		display: inline; 
-		vertical-align: middle;
-		text-transform: uppercase; 
 		padding: 1.5ex 0;
 		border-top: 0;
 	}
 	.main-menu a { 
-		color: black; 
-		font-family: Ropa Sans;
-		text-decoration: none;
+		display: inline;
+		padding: 1.0ex;
 		border-right: inset lightgray 2px;
 		border-left: solid transparent 2px;
-		padding: 1.0ex;
-		display: inline;
-	}
-
-	.main-menu ul li:last-child a { 
-		border-right: inset transparent 2px; 				
 	}
 						  
 	.main-menu a:hover { 
-		color:  rgb(42,181,188);
-		background-color: rgb(255,255,255); 
 		border: solid rgb(255,255,255) 2px; 
 		border-radius: 8px; 
 	}
 	.main-menu ul:hover a.active:not(:hover){
-		color: black; 
-		border-right: inset lightgray 2px;
-		border-left: solid transparent 2px;
-		background-color: rgba(255,255,255,0);
-		border-radius: 0;
 		border-right: inset lightgray 2px;
 		border-left: solid transparent 2px;
 		border-top: 0;
@@ -429,8 +399,6 @@ a#btn_youTube {
 	}
 
 	a.active { 
-		color:  rgb(42,181,188);
-		background-color: rgb(255,255,255); 
 		border: solid rgb(255,255,255) 2px; 
 		border-radius: 8px; 
 	}
@@ -448,10 +416,10 @@ a#btn_youTube {
 
 	.main img.left  { 
 		float:left; 
-		margin-right: 3em;
 		width: 220px;
+		margin-right: 3em;
 	} 
-	.colonca { 
+	.column { 
 		width: 47%; 
 	}
 	.slogan_container {
@@ -477,7 +445,7 @@ a#btn_youTube {
 		font-size: 2em;
 		line-height: 115px;
 	}
-	/* Основное меню */
+	/*  Main Menu Navigation */
 	.main-menu  {
 		float: right;
 		line-height: 115px;
@@ -485,35 +453,19 @@ a#btn_youTube {
 	}
 	.main-menu  li { 
 		display: inline; 
-		vertical-align: middle;
-		text-transform: uppercase; 
 		padding: 1.5ex 0;
 	}
 	.main-menu a { 
-		color: black; 
-		font-family: Ropa Sans;
-		text-decoration: none;
+		padding: 1.5ex; 
 		border-right: inset lightgray 2px;
 		border-left: solid transparent 2px;
-		padding: 1.5ex; 
-	}
-
-	.main-menu ul li:last-child a { 
-		border-right: inset transparent 2px; 				
 	}
 						  
 	.main-menu a:hover { 
-		color:  rgb(42,181,188);
-		background-color: rgb(255,255,255); 
 		border: solid rgb(255,255,255) 2px; 
 		border-radius: 8px; 
 	}
 	.main-menu ul:hover a.active:not(:hover){
-		color: black; 
-		border-right: inset lightgray 2px;
-		border-left: solid transparent 2px;
-		background-color: rgba(255,255,255,0);
-		border-radius: 0;
 		border-right: inset lightgray 2px;
 		border-left: solid transparent 2px;
 		border-top: 0;
@@ -521,8 +473,6 @@ a#btn_youTube {
 	}
 
 	a.active { 
-		color:  rgb(42,181,188);
-		background-color: rgb(255,255,255); 
 		border: solid rgb(255,255,255) 2px; 
 		border-radius: 8px; 
 	}
@@ -536,7 +486,7 @@ a#btn_youTube {
 }
 
 @media only all and (min-width: 821px) {
-	/* Основной блок */
+	/* Main Content */
 	.main  h2 { 
 		padding-bottom: 1em;
 		padding-top: 1em;
@@ -544,12 +494,13 @@ a#btn_youTube {
 	.main { 
 		float: left;
 		width: 70%; 
-		padding-top: 3em;
 		overflow: auto;
+		padding-top: 3em;
 	}
+	/* News aside */
 	aside {
-		width: 27%;
 		float: right;
+		width: 27%;
 		padding-top: 7.8em;	
 	}
 	img.slogan {
@@ -564,28 +515,27 @@ a#btn_youTube {
 		width: 100%;
 		margin-right: 0;
 	}	
-
+	/* Footer */
 	.logo_footer { 
 		float: left; 
-		font-size: 2em;
-		line-height: 167px;
 		margin-top: 0;
+		line-height: 167px;
 	}
 	
 	.contact {
+		margin: 2.7em 18em 0em 13em;
 		padding-left: 1em;
 		padding-top: 1em;
 		border-left: groove lightgray 2px;
 		border-top-width: 0;
-		margin: 2.7em 18em 0em 13em
 	}	
 	.contact p {
 		text-align: left;
 	}
 	.info {
 		float: right; 
-		margin-top: 3em;
 		width: 260px;
+		margin-top: 3em;
 	}	
 	#phone {
 		display: block;
@@ -616,18 +566,18 @@ a#btn_youTube {
 		padding: 0 165px;
 	}
 	.main {
-		width: 70%;
 		float: left;
+		width: 70%;
 	}
 	aside {
-		width: 27%;
 		float: right;
+		width: 27%;
 	}
-	.colonca { 
+	.column { 
 		width: 300px; 
 	}						 
 
-	.colonca img { 
+	.column img { 
 		width: 300px; 
 		height: 140px;
 		overflow: hidden;
