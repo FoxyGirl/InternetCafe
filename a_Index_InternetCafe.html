@@ -126,7 +126,12 @@
           </div>	
 		<!-- End of Contact Block -->		  
 	</footer>
-	<!-- End of Footer -->   
+	<!-- End of Footer --> 
+	<!-- Go to Top --> 
+	<div id="toTop">
+	<!-- 	<img src="img/nf_top_button.png"> -->
+	</div>
+	<!-- End of Go to Top --> 	
 	<script>
 		/* Collapse menu */
 		var toggler = document.getElementById('toggler');
@@ -138,6 +143,28 @@
 			menu.classList.toggle('hide');
 			toggler.classList.toggle('cross');
 		}
+		/********************/
+		
+		/* Scrolling Window*/
+		var el = document.getElementById('toTop');	
+		//если окно проскроллировано на 50px, показываем кнопку для прокрутки наверх
+		window.onscroll = function () {
+			el.style.display = (window.pageYOffset > '50' ? 'block' : 'none');
+		}	
+		//обработчик клика по кнопки прокрутки
+		el.addEventListener('click', function(e) {
+			e.preventDefault();
+			toUp();
+		}, false);
+		
+		//функция прокрутки окна наверх
+		function toUp() {
+			//переменная скорость тем больше, чем больше промотали вниз
+			var speed = window.pageYOffset/10;
+			window.scrollBy(0,-speed);
+			if (window.pageYOffset > 0) {requestAnimationFrame(toUp);}
+			}		
+		/********************/
 	</script>
   </body>
 </html>
