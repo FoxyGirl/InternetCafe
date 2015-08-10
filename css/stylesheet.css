@@ -196,6 +196,10 @@ a.active {
 	padding-bottom: 1em;
 	padding-top: 1em;
 }
+
+.main  .first_artcile h2 { 
+	padding-top: 0;
+}
 h2 + p {
   color: rgb(42,181,188);
 }
@@ -368,8 +372,8 @@ a#btn_youTube {
 	        box-shadow: 0 0 3px 2px rgba(42,181,188,0.8);
 }
 
-#toTop {
-	display: none;
+#toTop a{
+	display: block;
 	position: fixed;
 	width: 50px;
 	height: 40px;
@@ -386,7 +390,7 @@ a#btn_youTube {
 	padding: 6px;
 }
 
-#toTop:hover {
+#toTop a:hover {
 	opacity: 1;
 }
 
