@@ -148,6 +148,7 @@
 		/* Scrolling Window*/
 		var el = document.getElementById('toTop');	
 		//если окно проскроллировано на 50px, показываем кнопку для прокрутки наверх
+		el.style.display = (window.pageYOffset > '50' ? 'block' : 'none');			
 		window.onscroll = function () {
 			el.style.display = (window.pageYOffset > '50' ? 'block' : 'none');
 		}	
