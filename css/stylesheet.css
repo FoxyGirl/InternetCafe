@@ -194,7 +194,7 @@ a.active {
 }
 .main  h2 { 
 	padding-bottom: 1em;
-/*	padding-top: 1em*/
+	padding-top: 1em;
 }
 h2 + p {
   color: rgb(42,181,188);
@@ -326,7 +326,7 @@ footer a {
 }
 .info {
 	width: 260px;
-	margin: 2em auto;
+	margin: 1em auto;
 	text-align: center;
 }
 .contact {
@@ -561,7 +561,7 @@ a#btn_youTube {
 	}
 	
 	.contact {
-		margin: 2.7em 18em 0em 13em;
+		margin: 2.7em 18em 2em 13em;
 		padding-left: 1em;
 		padding-top: 1em;
 		border-left: groove lightgray 2px;
@@ -573,7 +573,7 @@ a#btn_youTube {
 	.info {
 		float: right; 
 		width: 260px;
-		margin-top: 3em;
+		margin-top: 4em;
 	}	
 	#phone {
 		display: block;
@@ -587,6 +587,11 @@ a#btn_youTube {
 	}
 	img.slogan {
 		width: 120px;
+	}	
+	.info {
+		float: right; 
+		width: 260px;
+		margin-top: 3em;
 	}	
 }
 @media only all and (min-width: 1075px) {
